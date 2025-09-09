@@ -5,6 +5,7 @@
 - Enter the bootloader mode by holding down the BOOTSEL button while reconnecting the board into USB port.
 
 https://github.com/beekeeb/piantor
+
 https://github.com/qmk/qmk_firmware/tree/master/keyboards/beekeeb/piantor
 
 ## Keyboard Layers App companion
@@ -13,33 +14,33 @@ Display the selected keyboard layer layout on screen to assist your to memorize 
 
 It allows you to display the layout in a remote screen, so you can use a tablet or similar to save space on your main screen.
 
-https://github.com/maatthc/miryoku_qmk_app
+Details here: https://github.com/maatthc/miryoku_qmk_app
 
 ## Compile and Flash
 
 ### Install and setup
-- Install QMK
+- Install QMK:
 `python3 -m pip install qmk`
 
-- Set this folder as an userspace
+- Set this folder as an userspace:
 `qmk config user.overlay_dir="$(realpath qmk_userspace)"`
 
-- Set up QMK 
+- Set up QMK:
 `cd ..; qmk setup`
 
 
 ### Compile
-qmk compile -c -kb beekeeb/piantor -km manna-harbour_miryoku
+`qmk compile -c -kb beekeeb/piantor -km manna-harbour_miryoku`
 
 ### Flash
-qmk flash -c -kb beekeeb/piantor -km manna-harbour_miryoku
+`qmk flash -c -kb beekeeb/piantor -km manna-harbour_miryoku`
 
 ### Check debug logs
-qmk console
+`qmk console`
 
 ### info
 
-qmk info -kb beekeeb/piantor -km manna-harbour_miryoku
+`qmk info -kb beekeeb/piantor -km manna-harbour_miryoku`
 
 ## Configuration
 
