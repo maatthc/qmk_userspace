@@ -1,0 +1,259 @@
+[
+  {
+    "name": "Miryoku KLE Base",
+    "author": "Alexandre Andrade",
+    "notes": "Open at https://keyboard-layout-editor.com/ - Based on https://github.com/manna-harbour/miryoku/"
+  },
+  [
+    {
+      "f": 4,
+      "w": 12,
+      "h": 0.5,
+      "d": true
+    },
+    "<b>Base Layer - QWERTY</b>"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 2,
+      "a": 7,
+      "f": 3
+    },
+    "E",
+    {
+      "x": 6
+    },
+    "I"
+  ],
+  [
+    {
+      "y": -0.87,
+      "x": 1
+    },
+    "W",
+    {
+      "x": 1
+    },
+    "R",
+    {
+      "x": 4
+    },
+    "U",
+    {
+      "x": 1
+    },
+    "O"
+  ],
+  [
+    {
+      "y": -0.88,
+      "x": 4
+    },
+    "T",
+    {
+      "x": 2
+    },
+    "Y"
+  ],
+  [
+    {
+      "y": -0.75
+    },
+    "Q",
+    {
+      "x": 10
+    },
+    "P"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 2,
+      "t": "#000000\n\n\n\n#a10808"
+    },
+    "D\n\n\n\nCtrl",
+    {
+      "x": 6
+    },
+    "K\n\n\n\nCtrl"
+  ],
+  [
+    {
+      "y": -0.8700000000000001,
+      "x": 1
+    },
+    "S\n\n\n\nAlt",
+    {
+      "x": 1,
+      "n": true
+    },
+    "F\n\n\n\nShift",
+    {
+      "x": 4,
+      "n": true
+    },
+    "J\n\n\n\nShift",
+    {
+      "x": 1
+    },
+    "L\n\n\n\nAlt"
+  ],
+  [
+    {
+      "y": -0.8799999999999999,
+      "x": 4,
+      "t": "#000000"
+    },
+    "G",
+    {
+      "x": 2
+    },
+    "H"
+  ],
+  [
+    {
+      "y": -0.75,
+      "n": true
+    },
+    "A",
+    {
+      "x": 10,
+      "a": 5,
+      "n": true
+    },
+    "'\n\n\n\n\n\n\""
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 2,
+      "a": 7
+    },
+    "C",
+    {
+      "x": 6,
+      "a": 5
+    },
+    "<\n\n\n\n\n\n,"
+  ],
+  [
+    {
+      "y": -0.8700000000000001,
+      "x": 1,
+      "a": 7
+    },
+    "X",
+    {
+      "x": 1
+    },
+    "V",
+    {
+      "x": 4
+    },
+    "M",
+    {
+      "x": 1,
+      "a": 5
+    },
+    ">\n\n\n\n\n\n."
+  ],
+  [
+    {
+      "y": -0.8799999999999999,
+      "x": 4,
+      "a": 7
+    },
+    "B",
+    {
+      "x": 2
+    },
+    "N"
+  ],
+  [
+    {
+      "y": -0.75
+    },
+    "Z",
+    {
+      "x": 10,
+      "a": 5
+    },
+    "?\n\n\n\n\n\n/"
+  ],
+  [
+    {
+      "y": -0.33999999999999986,
+      "x": 2.5,
+      "c": "#6975db",
+      "t": "#000000\n\n\n\n#46ebd7",
+      "a": 7
+    },
+    "Esc\n\n\n\nMedia",
+    {
+      "x": 5
+    },
+    "Ins\n\n\n\nFun"
+  ],
+  [
+    {
+      "y": -0.16000000000000014,
+      "c": "#cccccc",
+      "t": "#000000",
+      "a": 4,
+      "f": 4,
+      "w": 12,
+      "d": true
+    },
+    "\n<b>Miryoku</b>",
+    {
+      "x": -2,
+      "a": 7,
+      "f": 3,
+      "d": true
+    },
+    "<img src='https://raw.githubusercontent.com/manna-harbour/miryoku/master/data/logos/manna-harbour-boa-32.png'>",
+    {
+      "d": true
+    },
+    "<img src='https://raw.githubusercontent.com/manna-harbour/miryoku/master/data/logos/miryoku-roa-32.png'>"
+  ],
+  [
+    {
+      "r": 18,
+      "rx": 3,
+      "ry": 7.75,
+      "y": -4.09,
+      "x": -0.5,
+      "c": "#6975db",
+      "t": "#000000\n\n\n\n#46ebd7"
+    },
+    "⌫\n\n\n\nNav"
+  ],
+  [
+    {
+      "r": 36,
+      "y": -1,
+      "x": -0.5,
+      "sm": "cherry"
+    },
+    "⭾\n\n\n\nMouse"
+  ],
+  [
+    {
+      "r": -36,
+      "rx": 9,
+      "y": -4.09,
+      "x": -0.5
+    },
+    "↵\n\n\n\nSym"
+  ],
+  [
+    {
+      "r": -18,
+      "y": -1,
+      "x": -0.5
+    },
+    "Spc\n\n\n\nNum"
+  ]
+]
