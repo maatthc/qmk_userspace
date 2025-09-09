@@ -30,26 +30,26 @@ Details here: https://github.com/maatthc/miryoku_qmk_app
 
 
 ### Compile
-`qmk compile -c -kb beekeeb/piantor -km manna-harbour_miryoku`
+`qmk compile -c -kb beekeeb/piantor -km manna_harbour_miryoku`
 
 ### Flash
-`qmk flash -c -kb beekeeb/piantor -km manna-harbour_miryoku`
+`qmk flash -c -kb beekeeb/piantor -km manna_harbour_miryoku`
 
 ### Check debug logs
 `qmk console`
 
 ### info
 
-`qmk info -kb beekeeb/piantor -km manna-harbour_miryoku`
+`qmk info -kb beekeeb/piantor -km manna_harbour_miryoku`
 
 ## Configuration
 
-Details: ./users/manna-harbour_miryoku#userspace
+Details: ./users/manna_harbour_miryoku#userspace
 
-- users/manna-harbour_miryoku/custom_config.h
-- users/manna-harbour_miryoku/custom_rules.mk
-- keyboards/beekeeb/piantor/keymaps/manna-harbour_miryoku/config.h
-- keyboards/beekeeb/piantor/keymaps/manna-harbour_miryoku/keymap.c
+- users/manna_harbour_miryoku/custom_config.h
+- users/manna_harbour_miryoku/custom_rules.mk
+- keyboards/beekeeb/piantor/keymaps/manna_harbour_miryoku/config.h
+- keyboards/beekeeb/piantor/keymaps/manna_harbour_miryoku/keymap.c
 
 ### Typing Test
 
