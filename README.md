@@ -1,59 +1,81 @@
-# QMK Userspace
+#   My Piantor Miryoku layout for QMK
 
-This is a template repository which allows for an external set of QMK keymaps to be defined and compiled. This is useful for users who want to maintain their own keymaps without having to fork the main QMK repository.
+- Don’t connect or disconnect the TRRS cable when the keyboard is powered. Always disconnect the USB cable first.
+- Flash the firmware on both Raspberry Pi Picos.
+- Enter the bootloader mode by holding down the BOOTSEL button while reconnecting the board into USB port.
 
-## Howto configure your build targets
+https://github.com/beekeeb/piantor
+https://github.com/qmk/qmk_firmware/tree/master/keyboards/beekeeb/piantor
 
-1. Run the normal `qmk setup` procedure if you haven't already done so -- see [QMK Docs](https://docs.qmk.fm/#/newbs) for details.
-1. Fork this repository
-1. Clone your fork to your local machine
-1. Enable userspace in QMK config using `qmk config user.overlay_dir="$(realpath qmk_userspace)"`
-1. Add a new keymap for your board using `qmk new-keymap`
-    * This will create a new keymap in the `keyboards` directory, in the same location that would normally be used in the main QMK repository. For example, if you wanted to add a keymap for the Planck, it will be created in `keyboards/planck/keymaps/<your keymap name>`
-    * You can also create a new keymap using `qmk new-keymap -kb <your_keyboard> -km <your_keymap>`
-    * Alternatively, add your keymap manually by placing it in the location specified above.
-    * `layouts/<layout name>/<your keymap name>/keymap.*` is also supported if you prefer the layout system
-1. Add your keymap(s) to the build by running `qmk userspace-add -kb <your_keyboard> -km <your_keymap>`
-    * This will automatically update your `qmk.json` file
-    * Corresponding `qmk userspace-remove -kb <your_keyboard> -km <your_keymap>` will delete it
-    * Listing the build targets can be done with `qmk userspace-list`
-1. Commit your changes
+## Keyboard Layers App companion
 
-## Howto build with GitHub
+Display the selected keyboard layer layout on screen to assist your to memorize the key's locations.
 
-1. In the GitHub Actions tab, enable workflows
-1. Push your changes above to your forked GitHub repository
-1. Look at the GitHub Actions for a new actions run
-1. Wait for the actions run to complete
-1. Inspect the Releases tab on your repository for the latest firmware build
+It allows you to display the layout in a remote screen, so you can use a tablet or similar to save space on your main screen.
 
-## Howto build locally
+https://github.com/maatthc/miryoku_qmk_app
 
-1. Run the normal `qmk setup` procedure if you haven't already done so -- see [QMK Docs](https://docs.qmk.fm/#/newbs) for details.
-1. Fork this repository
-1. Clone your fork to your local machine
-1. `cd` into this repository's clone directory
-1. Set global userspace path: `qmk config user.overlay_dir="$(realpath .)"` -- you MUST be located in the cloned userspace location for this to work correctly
-    * This will be automatically detected if you've `cd`ed into your userspace repository, but the above makes your userspace available regardless of your shell location.
-1. Compile normally: `qmk compile -kb your_keyboard -km your_keymap` or `make your_keyboard:your_keymap`
+## Compile and Flash
 
-Alternatively, if you configured your build targets above, you can use `qmk userspace-compile` to build all of your userspace targets at once.
+### Install and setup
+- Install QMK
+`python3 -m pip install qmk`
 
-## Extra info
+- Set this folder as an userspace
+`qmk config user.overlay_dir="$(realpath qmk_userspace)"`
 
-If you wish to point GitHub actions to a different repository, a different branch, or even a different keymap name, you can modify `.github/workflows/build_binaries.yml` to suit your needs.
+- Set up QMK 
+`cd ..; qmk setup`
 
-To override the `build` job, you can change the following parameters to use a different QMK repository or branch:
-```
-    with:
-      qmk_repo: qmk/qmk_firmware
-      qmk_ref: master
-```
 
-If you wish to manually manage `qmk_firmware` using git within the userspace repository, you can add `qmk_firmware` as a submodule in the userspace directory instead. GitHub Actions will automatically use the submodule at the pinned revision if it exists, otherwise it will use the default latest revision of `qmk_firmware` from the main repository.
+### Compile
+qmk compile -c -kb beekeeb/piantor -km manna-harbour_miryoku
 
-This can also be used to control which fork is used, though only upstream `qmk_firmware` will have support for external userspace until other manufacturers update their forks.
+### Flash
+qmk flash -c -kb beekeeb/piantor -km manna-harbour_miryoku
 
-1. (First time only) `git submodule add https://github.com/qmk/qmk_firmware.git`
-1. (To update) `git submodule update --init --recursive`
-1. Commit your changes to your userspace repository
+### Check debug logs
+qmk console
+
+### info
+
+qmk info -kb beekeeb/piantor -km manna-harbour_miryoku
+
+## Configuration
+
+Details: ./users/manna-harbour_miryoku#userspace
+
+- users/manna-harbour_miryoku/custom_config.h
+- users/manna-harbour_miryoku/custom_rules.mk
+- keyboards/beekeeb/piantor/keymaps/manna-harbour_miryoku/config.h
+- keyboards/beekeeb/piantor/keymaps/manna-harbour_miryoku/keymap.c
+
+### Typing Test
+
+https://config.qmk.fm/#/test
+
+### Symbols that correspond to keycodes available in QMK.
+https://docs.qmk.fm/keycodes
+
+## Generated Layout/Layers images
+
+Json files and images at: ./data/layers/
+
+- ![Base](./data/layers/miryoku-kle-base.png)
+
+- ![Media](./data/layers/miryoku-kle-media.png)
+
+- ![Nav](./data/layers/miryoku-kle-nav.png)
+
+- ![Mouse](./data/layers/miryoku-kle-mouse.png)
+
+- ![Symbols](./data/layers/miryoku-kle-sym.png)
+
+- ![Numbers](./data/layers/miryoku-kle-num.png)
+
+- ![Fun](./data/layers/miryoku-kle-fun.png)
+
+
+### Make your own
+
+Make your changes to the related https://github.com/manna-harbour/miryoku/tree/master/data/layers/*.json, and feed it to http://www.keyboard-layout-editor.com, using the "Upload JSON" button in the "Raw data" tab. 
