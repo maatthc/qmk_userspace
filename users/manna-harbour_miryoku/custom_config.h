@@ -5,8 +5,7 @@
 
 #pragma once
 
-#define TAPPING_TERM 200
-#define DYNAMIC_TAPPING_TERM_INCREMENT 50
+#define TAPPING_TERM 0
 
 // Do not Auto Shift special keys -_, =+, [{, ]}, ;:, '", ,<, .>, and /?
 //#define NO_AUTO_SHIFT_SPECIAL
@@ -34,9 +33,8 @@ KC_Z,              KC_X,              KC_C,              KC_V,              KC_B
 U_NP,              U_NP,              LT(U_MEDIA,KC_ESC),LT(U_NAV,KC_BSPC),  LT(U_MOUSE,KC_TAB),LT(U_SYM,KC_ENT),  LT(U_NUM,KC_SPC), LT(U_FUN,KC_INS),  U_NP,              U_NP
 
 
-// Added Dynamic Tapping Term : https://docs.qmk.fm/tap_hold#dynamic-tapping-term
 #define MIRYOKU_LAYER_MEDIA \
-U_NA,     U_NA,     U_NA,     U_NA,     DT_PRNT,           QK_BACKLIGHT_STEP, KC_BRID,           KC_BRIU,           U_NU,              U_NU,           \
-KC_LGUI,  KC_LALT,  KC_LCTL,  KC_LSFT,  DT_UP,             KC_MPRV,           KC_VOLD,           KC_VOLU,           KC_MNXT,           U_NU,           \
-U_NA,     U_NA,     U_NA,     U_NA,     DT_DOWN,           U_NU,              U_NU,              U_NU,              U_NU,              U_NU,           \
+U_NA,     U_NA,     U_NA,     U_NA,     U_NA,           QK_BACKLIGHT_STEP, KC_BRID,           KC_BRIU,           U_NU,              U_NU,           \
+KC_LGUI,  KC_LALT,  KC_LCTL,  KC_LSFT,  U_NA,             KC_MPRV,           KC_VOLD,           KC_VOLU,           KC_MNXT,           U_NU,           \
+U_NA,     U_NA,     U_NA,     U_NA,     U_NA,           U_NU,              U_NU,              U_NU,              U_NU,              U_NU,           \
 U_NP,     U_NP,     U_NA,     U_NA,     U_NA,              KC_MSTP,           KC_MPLY,           KC_MUTE,           U_NP,              U_NP
