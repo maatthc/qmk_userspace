@@ -1,0 +1,3 @@
+[submodule "modules/jgandert"]
+	path = modules/jgandert
+	url = https://github.com/jgandert/qmk_modules.git
