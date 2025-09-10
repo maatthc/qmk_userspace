@@ -43,25 +43,9 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 }
 
 // Predictive tap hold: https://github.com/jgandert/qmk_modules/tree/main/predictive_tap_hold
-uint8_t pth_get_side(keyrecord_t* record) {
-    keypos_t pos = record->event.key;
-    bool is_left;
-
-#ifdef SPLIT_KEYBOARD
-    is_left = pos.row < MATRIX_ROWS / 2;
-#else
-    is_left = (MATRIX_COLS > MATRIX_ROWS)
-                ? pos.col < MATRIX_COLS / 2
-                : pos.row < MATRIX_ROWS / 2;
-#endif
-
-    return is_left ? PTH_L : PTH_R;
-}
-
-// const uint8_t pth_side_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM = LAYOUT(
-//     PTH_L, PTH_L, PTH_L, PTH_L, PTH_L,     PTH_R, PTH_R, PTH_R, PTH_R, PTH_R, PTH_R,
-//     PTH_L, PTH_L, PTH_L, PTH_L, PTH_L,     PTH_R, PTH_R, PTH_R, PTH_R, PTH_R, PTH_R,
-//     PTH_L, PTH_L, PTH_L, PTH_L, PTH_L,     PTH_R, PTH_R, PTH_R, PTH_R, PTH_R, PTH_R,
-//
-//                  PTH_L, PTH_L, PTH_L,     PTH_R, PTH_R, PTH_R
-// );
+const uint8_t pth_side_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM = LAYOUT_miryoku(
+    PTH_L, PTH_L, PTH_L, PTH_L, PTH_L,     PTH_R, PTH_R, PTH_R, PTH_R, PTH_R,
+    PTH_L, PTH_L, PTH_L, PTH_L, PTH_L,     PTH_R, PTH_R, PTH_R, PTH_R, PTH_R,
+    PTH_L, PTH_L, PTH_L, PTH_L, PTH_L,     PTH_R, PTH_R, PTH_R, PTH_R, PTH_R,
+    PTH_L, PTH_L, PTH_L, PTH_L, PTH_L,     PTH_R, PTH_R, PTH_R, PTH_R, PTH_R
+);
