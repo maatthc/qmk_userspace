@@ -8,6 +8,9 @@
 #define COMBO_COUNT 1
 // This is the number of combos you have defined in your keymap
 
+#define PTH_FAST_STREAK_TAP_ENABLE
+// https://github.com/jgandert/qmk_modules/blob/main/predictive_tap_hold/README.md#fast-streak-tap
+
 #define XXX KC_NO
 
 #define LAYOUT_miryoku( \
