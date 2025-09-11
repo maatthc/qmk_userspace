@@ -9,6 +9,8 @@
 // This is the number of combos you have defined in your keymap
 
 #define PTH_FAST_STREAK_TAP_ENABLE
+#define PTH_DEBUG
+#define PTH_DONT_HOLD_INSTANTLY
 // https://github.com/jgandert/qmk_modules/blob/main/predictive_tap_hold/README.md#fast-streak-tap
 
 #define XXX KC_NO
