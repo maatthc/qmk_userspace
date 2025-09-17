@@ -12,9 +12,11 @@
 #define PTH_DEBUG
 #define PTH_DONT_HOLD_INSTANTLY
 // https://github.com/jgandert/qmk_modules/blob/main/predictive_tap_hold/README.md#fast-streak-tap
+
 #define RAW_USAGE_PAGE 0xFF60
 #define RAW_USAGE 0x61
 // https://docs.qmk.fm/features/rawhid#usage
+// https://github.com/maatthc/qmk_layers_app_companion
 
 #define XXX KC_NO
 
