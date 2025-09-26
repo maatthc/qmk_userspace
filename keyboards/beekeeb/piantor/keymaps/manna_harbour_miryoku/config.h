@@ -13,6 +13,10 @@
 #define PTH_DONT_HOLD_INSTANTLY
 // https://github.com/jgandert/qmk_modules/blob/main/predictive_tap_hold/README.md#fast-streak-tap
 
+#define RAW_EPSIZE 32
+#define PAYLOAD_MARK 0x90
+#define PAYLOAD_BEGIN 24
+
 #define RAW_USAGE_PAGE 0xFF60
 #define RAW_USAGE 0x61
 // https://docs.qmk.fm/features/rawhid#usage

@@ -18,7 +18,11 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 #ifdef CONSOLE_ENABLE
     uprintf("LAYER: Selected Layer: %d\n", hi_layer);
 #endif
-    raw_hid_send(&hi_layer,32);
+    uint8_t response[RAW_EPSIZE];
+    memset(response, 0x00, RAW_EPSIZE);
+    response[PAYLOAD_BEGIN] = PAYLOAD_MARK;
+    response[PAYLOAD_BEGIN + 1] = hi_layer;
+    raw_hid_send(response, RAW_EPSIZE);
     return state;
 }
 
