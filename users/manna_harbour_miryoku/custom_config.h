@@ -5,8 +5,6 @@
 
 #pragma once
 
-#define TAPPING_TERM 0
-
 // Do not Auto Shift special keys -_, =+, [{, ]}, ;:, '", ,<, .>, and /?
 //#define NO_AUTO_SHIFT_SPECIAL
 
