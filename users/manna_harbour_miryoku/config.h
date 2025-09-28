@@ -8,8 +8,9 @@
 #include "custom_config.h"
 
 // default but used in macros
-#undef TAPPING_TERM
-#define TAPPING_TERM 0
+// Why after the custom_config ??
+// #undef TAPPING_TERM
+// #define TAPPING_TERM 0
 
 
 // Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
