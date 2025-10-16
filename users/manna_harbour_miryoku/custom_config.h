@@ -54,11 +54,18 @@ RSG(KC_LEFT),  K20,  K21,  K22,  K23,  K24,         K25,  K26,  K27,  K28,  K29,
 KC_Q,              KC_W,              KC_E,              KC_R,              KC_T,              KC_Y,              KC_U,              KC_I,              KC_O,              KC_P,              \
 KC_A,              LALT_T(KC_S),      LCTL_T(KC_D),      LSFT_T(KC_F),      KC_G,              KC_H,              LSFT_T(KC_J),      LCTL_T(KC_K),      LALT_T(KC_L),      KC_QUOT,   \
 KC_Z,              KC_X,              KC_C,              KC_V,              KC_B,              KC_N,              KC_M,              KC_COMMA,          KC_DOT,            KC_SLSH,\
-U_NP,              U_NP,              LT(U_MEDIA,KC_ESC),LT(U_NAV,KC_BSPC),  LT(U_MOUSE,KC_TAB),LT(U_SYM,KC_ENT),  LT(U_NUM,KC_SPC), LT(U_FUN,KC_INS),  U_NP,              U_NP
+U_NP,              U_NP,              LT(U_MOUSE,KC_ESC),LT(U_NAV,KC_BSPC),  LT(U_NUM,KC_TAB),LT(U_SYM,KC_ENT),  LT(U_MEDIA,KC_SPC), LT(U_FUN,KC_INS),  U_NP,              U_NP
 
 
 #define MIRYOKU_LAYER_MEDIA \
-U_NA,     U_NA,     U_NA,     U_NA,     U_NA,           QK_BACKLIGHT_STEP, KC_BRID,           KC_BRIU,           U_NU,              U_NU,           \
-KC_LGUI,  KC_LALT,  KC_LCTL,  KC_LSFT,  U_NA,             KC_MPRV,           KC_VOLD,           KC_VOLU,           KC_MNXT,           U_NU,           \
-U_NA,     U_NA,     U_NA,     U_NA,     U_NA,           U_NU,              U_NU,              U_NU,              U_NU,              U_NU,           \
-U_NP,     U_NP,     U_NA,     U_NA,     U_NA,              KC_MSTP,           KC_MPLY,           KC_MUTE,           U_NP,              U_NP
+U_NU,   KC_BRID,   KC_BRIU,   QK_BACKLIGHT_STEP,  U_NU,        QK_BOOT,    U_NA,   U_NA,   U_NA,   U_NA,        \
+KC_MPRV,   KC_VOLD,   KC_VOLU,   KC_MNXT,   U_NU,              U_NA,    KC_LSFT,    KC_LCTL,   KC_LALT,   KC_LGUI, \
+RM_NEXT,   RM_HUEU,   RM_SATU,   RM_SATD,   RM_TOGG,           U_NA,    U_NA,   U_NA,   U_NA,    U_NA,     \
+U_NP,      U_NP,      KC_MUTE,   KC_MPLY,   KC_MSTP,           U_NA,    U_NA,   U_NA,   U_NP,   U_NP
+
+#define MIRYOKU_LAYER_NUM \
+U_NA,     U_NA,    U_NA,  U_NA,   U_NA,                 KC_LBRC,        KC_7,        KC_8,       KC_9,     KC_RBRC,         \
+KC_LGUI,     KC_LALT,    KC_LCTL,    KC_LSFT,    U_NA,           KC_SCLN,     KC_4,     KC_5,      KC_6,     KC_EQL,          \
+U_NA,     U_NA,    U_NA,    U_NA,  U_NA,             KC_GRV,     KC_1,       KC_2,        KC_3,           KC_BSLS,           \
+U_NP,     U_NP,    U_NA,    U_NA,  U_NA,             KC_DOT,     KC_0,       KC_MINS,     U_NP,         U_NP
+
