@@ -76,7 +76,3 @@ Json files and images at: ./data/layers/
 
 - ![Fun](./data/layers/miryoku-kle-fun.png)
 
-
-### Make your own
-
-Make your changes to the related https://github.com/manna-harbour/miryoku/tree/master/data/layers/*.json, and feed it to http://www.keyboard-layout-editor.com, using the "Upload JSON" button in the "Raw data" tab. 
