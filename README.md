@@ -30,10 +30,10 @@ Details here: https://github.com/maatthc/miryoku_qmk_app
 
 
 ### Compile
-`qmk compile -c -kb beekeeb/piantor -km manna_harbour_miryoku`
+`qmk compile -kb beekeeb/piantor -km manna_harbour_miryoku`
 
 ### Flash
-`qmk flash -c -kb beekeeb/piantor -km manna_harbour_miryoku`
+`qmk flash -kb beekeeb/piantor -km manna_harbour_miryoku`
 
 ### Check debug logs
 `qmk console`
@@ -44,7 +44,7 @@ Details here: https://github.com/maatthc/miryoku_qmk_app
 
 ## Configuration
 
-Details: ./users/manna_harbour_miryoku#userspace
+Details: ./users/manna_harbour_miryoku/readme.org
 
 - users/manna_harbour_miryoku/custom_config.h
 - users/manna_harbour_miryoku/custom_rules.mk
