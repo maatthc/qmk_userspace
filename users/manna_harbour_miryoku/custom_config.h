@@ -69,3 +69,9 @@ KC_LGUI,     KC_LALT,    KC_LCTL,    KC_LSFT,    U_NA,           KC_SCLN,     KC
 U_NA,     U_NA,    U_NA,    U_NA,  U_NA,             KC_GRV,     KC_1,       KC_2,        KC_3,           KC_BSLS,           \
 U_NP,     U_NP,    U_NA,    U_NA,  U_NA,             KC_MINS,     KC_0,       KC_DOT,     U_NP,         U_NP
 
+#define MIRYOKU_LAYER_FUN \
+KC_F12,            KC_F7,             KC_F8,             KC_F9,             KC_PSCR,           U_NA,              U_NA,         U_NA,       U_NA,       U_NA,       \
+KC_F11,            KC_F4,             KC_F5,             KC_F6,             KC_SCRL,           U_NA,              KC_LSFT,      KC_LCTL,    KC_LALT,    KC_LGUI,    \
+KC_F10,            KC_F1,             KC_F2,             KC_F3,             KC_PAUS,           U_NA,              U_NA,         U_NA,       U_NA,       U_NA,       \
+U_NP,              U_NP,              KC_APP,            KC_SPC,            KC_LGUI,           U_NA,              U_NA,         U_NA,       U_NP,       U_NP
+
