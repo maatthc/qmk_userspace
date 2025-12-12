@@ -22,6 +22,9 @@ Details here: https://github.com/maatthc/miryoku_qmk_app
 - Install QMK:
 `python3 -m pip install qmk`
 
+- Initialize the sub-modules:
+`git submodule update --init --recursive`
+
 - Set this folder as an userspace:
 `qmk config user.overlay_dir="$(realpath qmk_userspace)"`
 
