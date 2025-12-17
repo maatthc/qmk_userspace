@@ -13,9 +13,9 @@ KEY_OVERRIDE_ENABLE = yes # Required https://docs.qmk.fm/features/key_overrides
 
 
 # https://docs.qmk.fm/tap_hold#dynamic-tapping-term
-DYNAMIC_TAPPING_TERM_ENABLE = yes
+DYNAMIC_TAPPING_TERM_ENABLE = no
 
-CONSOLE_ENABLE = yes
-KEYCODE_STRING_ENABLE = yes
+# CONSOLE_ENABLE = yes
+# KEYCODE_STRING_ENABLE = yes
 
 RAW_ENABLE = yes

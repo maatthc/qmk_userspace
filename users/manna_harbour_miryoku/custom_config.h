@@ -12,7 +12,7 @@
 #define TAPPING_TERM 0
 
 #define PTH_FAST_STREAK_TAP_ENABLE
-#define PTH_DEBUG
+// #define PTH_DEBUG
 #define PTH_DONT_HOLD_INSTANTLY
 // PTH end
 
