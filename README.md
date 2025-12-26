@@ -35,16 +35,24 @@ Details here: https://github.com/maatthc/keyboard_layers_app_companion
 
 ### Install and setup
 - Install QMK:
-`python3 -m pip install qmk`
+```
+python3 -m pip install qmk
+```
 
 - Initialize the sub-modules:
-`git submodule update --init --recursive`
+```
+git submodule update --init --recursive
+```
 
 - Set this folder as an userspace:
-`qmk config user.overlay_dir="$(realpath qmk_userspace)"`
+```
+qmk config user.overlay_dir="$(realpath qmk_userspace)"
+```
 
 - Set up QMK:
-`cd ..; qmk setup`
+```
+cd ..; qmk setup
+```
 
 #### Piantor
 ```
@@ -65,20 +73,30 @@ export PATH=${PWD}/avr_toolchain/bin:$PATH
 ```
 
 ### Compile
-`qmk compile -kb $KEYBOARD -km maat`
+```
+qmk compile -kb $KEYBOARD -km maat
+```
 
 ### Flash
-`qmk flash -kb $KEYBOARD -km maat`
+```
+qmk flash -kb $KEYBOARD -km maat
+```
 
 ### Generates the Clang compile_commands.json
-`qmk compile --compiledb -kb $KEYBOARD -km maat`
+```
+qmk compile --compiledb -kb $KEYBOARD -km maat
+```
 
 ### Check debug logs
-`qmk console`
+```
+qmk console
+```
 
 ### info
 
-`qmk info -kb $KEYBOARD -km maat`
+```
+qmk info -kb $KEYBOARD -km maat
+```
 
 ## Configuration
 
