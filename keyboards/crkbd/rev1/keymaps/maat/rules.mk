@@ -1,0 +1,32 @@
+BOOTLOADER = atmel-dfu
+
+#To reduce memory use
+LTO_ENABLE = yes
+
+COMMAND_ENABLE = no
+SPACE_CADET_ENABLE = no
+GRAVE_ESC_ENABLE = no
+MAGIC_ENABLE = no
+BOOTMAGIC_ENABLE = no
+AVR_USE_MINIMAL_PRINTF = yes
+
+MUSIC_ENABLE = no
+AUDIO_ENABLE = no
+
+MOUSEKEY_ENABLE = no
+NKRO_ENABLE = no
+#To reduce memory use END
+
+OLED_ENABLE = yes
+RGBLIGHT_ENABLE = yes
+RGB_MATRIX_ENABLE = no
+
+EXTRAKEY_ENABLE = yes # Audio control and System control
+AUTO_SHIFT_ENABLE = no
+CAPS_WORD_ENABLE = yes
+
+# CONSOLE_ENABLE = yes
+# KEYCODE_STRING_ENABLE = yes
+
+RAW_ENABLE = yes
+WPM_ENABLE = yes
