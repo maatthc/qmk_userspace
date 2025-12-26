@@ -29,7 +29,7 @@ Display the selected keyboard layer layout on screen to assist your to memorize 
 
 It allows you to display the layout in a remote screen, so you can use a tablet or similar to save space on your main screen.
 
-Details here: https://github.com/maatthc/miryoku_qmk_app
+Details here: https://github.com/maatthc/keyboard_layers_app_companion
 
 ## Compile and Flash
 
