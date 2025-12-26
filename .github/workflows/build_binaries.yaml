@@ -13,8 +13,30 @@ jobs:
       qmk_repo: qmk/qmk_firmware
       qmk_ref: master
 
+  update-tag:
+    name: 'Update latest tag'
+    runs-on: ubuntu-latest
+    if: always() && !cancelled() && github.event_name == 'push'
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Update latest tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -d latest || true
+          git tag latest
+          git push origin :refs/tags/latest || true
+          git push origin latest
+
   publish:
     name: 'QMK Userspace Publish'
     uses: qmk/.github/.github/workflows/qmk_userspace_publish.yml@main
     if: always() && !cancelled()
-    needs: build
+    needs: [build, update-tag]
