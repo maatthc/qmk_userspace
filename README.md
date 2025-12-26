@@ -1,4 +1,6 @@
-#   My Piantor Miryoku layout for QMK
+#   My QMK keyboard layout
+
+Based on Miryoku Layout
 
 - Don’t connect or disconnect the TRRS cable when the keyboard is powered. Always disconnect the USB cable first.
 - Flash the firmware on both Raspberry Pi Picos.
@@ -31,28 +33,32 @@ Details here: https://github.com/maatthc/miryoku_qmk_app
 - Set up QMK:
 `cd ..; qmk setup`
 
+### Install old GCC 8.3.0
+Reduces size considerably (~1.5k):
+
+`./install_avr_8.3.0.sh`
+export PATH=${HOME}/avr_toolchain/bin:$PATH
 
 ### Compile
-`qmk compile -kb beekeeb/piantor -km manna_harbour_miryoku`
+`qmk compile -kb beekeeb/piantor -km maat`
 
 ### Flash
-`qmk flash -kb beekeeb/piantor -km manna_harbour_miryoku`
+`qmk flash -kb beekeeb/piantor -km maat`
+
+### Generates the clang compile_commands.json
+`qmk compile --compiledb -kb crkbd/rev1 -km maat`
 
 ### Check debug logs
 `qmk console`
 
 ### info
 
-`qmk info -kb beekeeb/piantor -km manna_harbour_miryoku`
+`qmk info -kb beekeeb/piantor -km maat`
 
 ## Configuration
 
-Details: ./users/manna_harbour_miryoku/readme.org
-
-- users/manna_harbour_miryoku/custom_config.h
-- users/manna_harbour_miryoku/custom_rules.mk
-- keyboards/beekeeb/piantor/keymaps/manna_harbour_miryoku/config.h
-- keyboards/beekeeb/piantor/keymaps/manna_harbour_miryoku/keymap.c
+- users/maat/
+- keyboards/beekeeb/piantor/keymaps/maat/
 
 ### Typing Test
 
