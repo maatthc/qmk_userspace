@@ -1,3 +1,6 @@
 [submodule "modules/jgandert"]
 	path = modules/jgandert
 	url = https://github.com/maatthc/jgandert_qmk_modules.git
+[submodule "modules/getreuer"]
+	path = modules/getreuer
+	url = https://github.com/getreuer/qmk-modules.git

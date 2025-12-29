@@ -64,8 +64,10 @@ export KEYBOARD="beekeeb/piantor"
 export KEYBOARD="crkbd/rev1"
 ```
 
-##### Compile with GCC v8.3.0
-Generates a firmware considerably smaller (~1.5k):
+##### Firmware size
+
+If you are facing issues with size, try different compiler versions: the v15.2 gives good results.
+Another possible options is to compile with GCC v8.3.0:
 
 ```
 ./install_avr_8.3.0.sh

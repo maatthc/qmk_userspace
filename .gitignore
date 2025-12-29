@@ -18,3 +18,4 @@ compile_commands.json
 # GCC
 avr_toolchain/
 avr_toolchain_build/
+avr-gcc-15.2.0-x64-linux/
