@@ -29,3 +29,6 @@
 #define RAW_USAGE_PAGE 0xFF60
 #define RAW_USAGE 0x61
 // -- App Companion end
+
+// Apply custom shift keys only on layer 4 (numbers).
+#define CUSTOM_SHIFT_KEYS_LAYER_MASK (1 << 4)

@@ -1,7 +1,18 @@
 // clang-format off
+#include "keycodes.h"
 #include QMK_KEYBOARD_H
 #include "raw_hid.h"
 #include "keymap.h"
+
+// https://github.com/getreuer/qmk-modules/tree/main/custom_shift_keys
+const custom_shift_key_t custom_shift_keys[] = {
+  {KC_2, KC_COMMA},
+  {KC_3, KC_DOT},
+  {KC_5, KC_LABK},
+  {KC_6, KC_RABK},
+  {KC_7, KC_LPRN},
+  {KC_9, KC_RPRN},
+};
 
 // Notifies the host of the layer change using raw HID
 // https://docs.qmk.fm/features/rawhid#usage
