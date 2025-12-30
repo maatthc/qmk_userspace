@@ -1,6 +1,6 @@
 #pragma once
 
-#include "rgb_matrix.h"
+#include "rgb.h"
 
 // -- To reduce memory use
 #define LAYER_STATE_8BIT

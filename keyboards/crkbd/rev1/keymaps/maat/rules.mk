@@ -18,8 +18,10 @@ NKRO_ENABLE = no
 #To reduce memory use END
 
 OLED_ENABLE = yes
+
 RGBLIGHT_ENABLE = yes
 RGB_MATRIX_ENABLE = no
+RGB_DISABLE_WHEN_USB_SUSPENDED = yes
 
 EXTRAKEY_ENABLE = yes # Audio control and System control
 AUTO_SHIFT_ENABLE = no

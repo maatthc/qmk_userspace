@@ -1,5 +1,11 @@
 #pragma once
 
+#ifdef RGBLIGHT_ENABLE
+#    define RGBLIGHT_SLEEP
+#    define RGBLIGHT_SPLIT
+#    define RGBLIGHT_DEFAULT_HUE 127
+#endif
+
 #ifdef RGB_MATRIX_ENABLE
 #    define RGB_MATRIX_KEYPRESSES // reacts to keypresses
 // #   define RGB_MATRIX_KEYRELEASES // reacts to keyreleases (instead of keypresses)

@@ -29,7 +29,7 @@ U_NP,              U_NP,              LT(L_MOUSE,KC_ESC),LT(L_NAV,KC_BSPC),  LT(
 
 
 #define LAYER_MEDIA \
-UG_TOGG,   KC_BRID,   KC_BRIU,   QK_BACKLIGHT_STEP,  UG_VALU,        QK_BOOT,    U_NA,   U_NA,   U_NA,   U_NA,        \
+UG_TOGG,   KC_BRID,   KC_BRIU,   QK_BACKLIGHT_STEP,  UG_VALU,        QK_BOOT,    U_NA,   U_NA,   U_NA,   KC_SLEP,        \
 KC_MPRV,   KC_VOLD,   KC_VOLU,   KC_MNXT,   UG_VALD,              U_NA,    KC_LSFT,    KC_LCTL,   KC_LALT,   KC_LGUI, \
 UG_NEXT,   UG_HUEU,   UG_HUED,   UG_SATU,   UG_SATD,              U_NA,    U_NA,   U_NA,   U_NA,    U_NA,     \
 U_NP,      U_NP,      KC_MUTE,   KC_MPLY,   KC_MSTP,           U_NA,    U_NA,   U_NA,   U_NP,   U_NP
