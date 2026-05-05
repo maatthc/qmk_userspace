@@ -2,7 +2,7 @@
   {
     "author": "Alexandre Andrade",
     "name": "Miryoku KLE Num",
-    "notes": "Open at https://keyboard-layout-editor.com/ - Based on https://github.com/manna-harbour/miryoku/"
+    "notes": "Open at https://editor.keyboard-tools.xyz/ - Based on https://github.com/manna-harbour/miryoku/"
   },
   [
     {
@@ -57,7 +57,7 @@
   [
     {
       "x": 4,
-      "y": -0.8799999999999999,
+      "y": -0.88,
       "c": "#cccccc",
       "a": 0,
       "f": 2
@@ -105,7 +105,7 @@
   [
     {
       "x": 1,
-      "y": -0.8700000000000001,
+      "y": -0.87,
       "c": "#cccccc",
       "a": 7
     },
@@ -130,7 +130,7 @@
   [
     {
       "x": 4,
-      "y": -0.8799999999999999,
+      "y": -0.88,
       "c": "#cccccc",
       "a": 0,
       "f": 2
@@ -180,7 +180,7 @@
   [
     {
       "x": 1,
-      "y": -0.8700000000000001,
+      "y": -0.87,
       "c": "#cccccc",
       "a": 0,
       "f": 2
@@ -205,7 +205,7 @@
   [
     {
       "x": 4,
-      "y": -0.8799999999999999,
+      "y": -0.88,
       "c": "#cccccc",
       "a": 0,
       "f": 2
@@ -238,7 +238,7 @@
   [
     {
       "x": 2.5,
-      "y": -0.33999999999999986,
+      "y": -0.34,
       "c": "#cccccc",
       "a": 0,
       "f": 2
@@ -254,7 +254,7 @@
   ],
   [
     {
-      "y": -0.16000000000000014,
+      "y": -0.16,
       "c": "#cccccc",
       "a": 4,
       "f": 4,
@@ -290,7 +290,8 @@
     {
       "r": 36,
       "x": -0.5,
-      "y": -1
+      "y": -1,
+      "g": true
     },
     ""
   ],
@@ -301,6 +302,7 @@
       "x": -0.5,
       "y": -4.09,
       "c": "#83DB69",
+      "g": false,
       "a": 5,
       "f": 3
     },

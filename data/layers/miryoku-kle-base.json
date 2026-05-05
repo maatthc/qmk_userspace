@@ -1,256 +1,259 @@
 [
-  {
-    "author": "Alexandre Andrade",
-    "name": "Miryoku KLE Base",
-    "notes": "Open at https://keyboard-layout-editor.com/ - Based on https://github.com/manna-harbour/miryoku/"
-  },
-  [
     {
-      "f": 4,
-      "w": 5,
-      "h": 0.75,
-      "d": true
+        "author": "Alexandre Andrade",
+        "name": "Miryoku KLE Base",
+        "notes": "Open at https://editor.keyboard-tools.xyz/ - Based on https://github.com/manna-harbour/miryoku/"
     },
-    "<b>Base Layer - QWERTY</b>"
-  ],
-  [
-    {
-      "x": 2,
-      "y": -0.5,
-      "a": 7,
-      "f": 3
-    },
-    "E",
-    {
-      "x": 6
-    },
-    "I"
-  ],
-  [
-    {
-      "x": 1,
-      "y": -0.87
-    },
-    "W",
-    {
-      "x": 1
-    },
-    "R",
-    {
-      "x": 4
-    },
-    "U",
-    {
-      "x": 1
-    },
-    "O"
-  ],
-  [
-    {
-      "x": 4,
-      "y": -0.8799999999999999
-    },
-    "T",
-    {
-      "x": 2
-    },
-    "Y"
-  ],
-  [
-    {
-      "y": -0.75
-    },
-    "Q",
-    {
-      "x": 10
-    },
-    "P"
-  ],
-  [
-    {
-      "x": 2,
-      "y": -0.5,
-      "t": "\n\n\n\n#a10808"
-    },
-    "D\n\n\n\nCtrl",
-    {
-      "x": 6
-    },
-    "K\n\n\n\nCtrl"
-  ],
-  [
-    {
-      "x": 1,
-      "y": -0.8700000000000001
-    },
-    "S\n\n\n\nAlt",
-    {
-      "x": 1,
-      "n": true
-    },
-    "F\n\n\n\nShift",
-    {
-      "x": 4,
-      "n": true
-    },
-    "J\n\n\n\nShift",
-    {
-      "x": 1
-    },
-    "L\n\n\n\nAlt"
-  ],
-  [
-    {
-      "x": 4,
-      "y": -0.8799999999999999
-    },
-    "G",
-    {
-      "x": 2
-    },
-    "H"
-  ],
-  [
-    {
-      "y": -0.75,
-      "n": true
-    },
-    "A",
-    {
-      "x": 10,
-      "a": 5,
-      "n": true
-    },
-    "'\n\n\n\n\n\n\""
-  ],
-  [
-    {
-      "x": 2,
-      "y": -0.5,
-      "a": 7
-    },
-    "C",
-    {
-      "x": 6,
-      "a": 5
-    },
-    "<\n\n\n\n\n\n,"
-  ],
-  [
-    {
-      "x": 1,
-      "y": -0.8700000000000001,
-      "a": 7
-    },
-    "X",
-    {
-      "x": 1
-    },
-    "V",
-    {
-      "x": 4
-    },
-    "M",
-    {
-      "x": 1,
-      "a": 5
-    },
-    ">\n\n\n\n\n\n."
-  ],
-  [
-    {
-      "x": 4,
-      "y": -0.8799999999999999,
-      "a": 7
-    },
-    "B",
-    {
-      "x": 2
-    },
-    "N"
-  ],
-  [
-    {
-      "y": -0.75
-    },
-    "Z",
-    {
-      "x": 10,
-      "a": 5
-    },
-    "?\n\n\n\n\n\n/"
-  ],
-  [
-    {
-      "x": 2.5,
-      "y": -0.33999999999999986,
-      "c": "#6975db",
-      "t": "\n\n\n\n#46ebd7",
-      "a": 7
-    },
-    "Esc\n\n\n\nMouse",
-    {
-      "x": 5
-    },
-    "Ins\n\n\n\nFun"
-  ],
-  [
-    {
-      "y": -0.16000000000000014,
-      "c": "#cccccc",
-      "a": 4,
-      "f": 4,
-      "w": 5,
-      "d": true
-    },
-    "\n<b>Miryoku</b>",
-    {
-      "x": 5,
-      "a": 7,
-      "f": 3,
-      "d": true
-    },
-    "<img src='https://raw.githubusercontent.com/manna-harbour/miryoku/master/data/logos/manna-harbour-boa-32.png'>",
-    {
-      "d": true
-    },
-    "<img src='https://raw.githubusercontent.com/manna-harbour/miryoku/master/data/logos/miryoku-roa-32.png'>"
-  ],
-  [
-    {
-      "r": 18,
-      "rx": 3,
-      "ry": 7.75,
-      "x": -0.5,
-      "y": -4.09,
-      "c": "#6975db"
-    },
-    "⌫\n\n\n\nNav"
-  ],
-  [
-    {
-      "r": 36,
-      "x": -0.5,
-      "y": -1,
-      "sm": "cherry"
-    },
-    "⭾\n\n\n\nNum"
-  ],
-  [
-    {
-      "r": -36,
-      "rx": 9,
-      "x": -0.5,
-      "y": -4.09
-    },
-    "↵\n\n\n\nSym"
-  ],
-  [
-    {
-      "r": -18,
-      "x": -0.5,
-      "y": -1
-    },
-    "Spc\n\n\n\nMedia"
-  ]
+    [
+        {
+            "f": 4,
+            "w": 5,
+            "h": 0.75,
+            "d": true
+        },
+        "<b>Base Layer - QWERTY</b>"
+    ],
+    [
+        {
+            "x": 2,
+            "y": -0.5,
+            "a": 7,
+            "f": 3
+        },
+        "E",
+        {
+            "x": 6
+        },
+        "I"
+    ],
+    [
+        {
+            "x": 1,
+            "y": -0.87
+        },
+        "W",
+        {
+            "x": 1
+        },
+        "R",
+        {
+            "x": 4
+        },
+        "U",
+        {
+            "x": 1
+        },
+        "O"
+    ],
+    [
+        {
+            "x": 4,
+            "y": -0.88
+        },
+        "T",
+        {
+            "x": 2
+        },
+        "Y"
+    ],
+    [
+        {
+            "y": -0.75
+        },
+        "Q",
+        {
+            "x": 10
+        },
+        "P"
+    ],
+    [
+        {
+            "x": 2,
+            "y": -0.5,
+            "ta": "\n\n\n\n#a10808"
+        },
+        "D\n\n\n\nCtrl",
+        {
+            "x": 6
+        },
+        "K\n\n\n\nCtrl"
+    ],
+    [
+        {
+            "x": 1,
+            "y": -0.87
+        },
+        "S\n\n\n\nAlt",
+        {
+            "x": 1,
+            "n": true
+        },
+        "F\n\n\n\nShift",
+        {
+            "x": 4,
+            "n": true
+        },
+        "J\n\n\n\nShift",
+        {
+            "x": 1
+        },
+        "L\n\n\n\nAlt"
+    ],
+    [
+        {
+            "x": 4,
+            "y": -0.88,
+            "ta": ""
+        },
+        "G",
+        {
+            "x": 2
+        },
+        "H"
+    ],
+    [
+        {
+            "y": -0.75,
+            "n": true
+        },
+        "A",
+        {
+            "x": 10,
+            "a": 5,
+            "n": true
+        },
+        "'\n\n\n\n\n\n\""
+    ],
+    [
+        {
+            "x": 2,
+            "y": -0.5,
+            "a": 7
+        },
+        "C",
+        {
+            "x": 6,
+            "a": 5
+        },
+        "<\n\n\n\n\n\n,"
+    ],
+    [
+        {
+            "x": 1,
+            "y": -0.87,
+            "a": 7
+        },
+        "X",
+        {
+            "x": 1
+        },
+        "V",
+        {
+            "x": 4
+        },
+        "M",
+        {
+            "x": 1,
+            "a": 5
+        },
+        ">\n\n\n\n\n\n."
+    ],
+    [
+        {
+            "x": 4,
+            "y": -0.88,
+            "a": 7
+        },
+        "B",
+        {
+            "x": 2
+        },
+        "N"
+    ],
+    [
+        {
+            "y": -0.75
+        },
+        "Z",
+        {
+            "x": 10,
+            "a": 5
+        },
+        "?\n\n\n\n\n\n/"
+    ],
+    [
+        {
+            "x": 2.5,
+            "y": -0.34,
+            "c": "#6975db",
+            "ta": "\n\n\n\n#46ebd7",
+            "a": 7
+        },
+        "Esc\n\n\n\nMouse",
+        {
+            "x": 5
+        },
+        "Ins\n\n\n\nMedia"
+    ],
+    [
+        {
+            "y": -0.16,
+            "c": "#cccccc",
+            "ta": "",
+            "a": 4,
+            "f": 4,
+            "w": 5,
+            "d": true
+        },
+        "\n<b>Miryoku</b>",
+        {
+            "x": 5,
+            "a": 7,
+            "f": 3,
+            "d": true
+        },
+        "<img src='https://raw.githubusercontent.com/manna-harbour/miryoku/master/data/logos/manna-harbour-boa-32.png'>",
+        {
+            "d": true
+        },
+        "<img src='https://raw.githubusercontent.com/manna-harbour/miryoku/master/data/logos/miryoku-roa-32.png'>"
+    ],
+    [
+        {
+            "r": 18,
+            "rx": 3,
+            "ry": 7.75,
+            "x": -0.5,
+            "y": -4.09,
+            "c": "#6975db",
+            "ta": "\n\n\n\n#46ebd7"
+        },
+        "⌫\n\n\n\nNav"
+    ],
+    [
+        {
+            "r": 36,
+            "x": -0.5,
+            "y": -1,
+            "sm": "cherry"
+        },
+        "⭾\n\n\n\nNum"
+    ],
+    [
+        {
+            "r": -36,
+            "rx": 9,
+            "x": -0.5,
+            "y": -4.09
+        },
+        "↵\n\n\n\nSym"
+    ],
+    [
+        {
+            "r": -18,
+            "x": -0.5,
+            "y": -1
+        },
+        "Spc\n\n\n\nFun"
+    ]
 ]
