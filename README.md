@@ -119,6 +119,8 @@ Definitions (.json) files at: ./data/layers/
 
 Images generated with [KLE NG](https://editor.keyboard-tools.xyz/)
 
+Drop the .json files in the KLE NG editor, make the changes, change the image Zoom to 200% then export the image with the "Export PNG" button.
+
 ![Base](./data/layers/miryoku-kle-base.png)
 
 ![Media](./data/layers/miryoku-kle-media.png)
