@@ -6,7 +6,7 @@
 #define U_NP KC_NO
 #define U_NU KC_NO
 
-enum layers_num { L_BASE, L_NAV, L_MOUSE, L_MEDIA, L_NUM, L_SYM, L_FUN };
+enum layers_num { L_BASE, L_NAV, L_WIN, L_MEDIA, L_NUM, L_SYM, L_FUN };
 
 #define MAPPING( \
       K00,  K01,  K02,  K03,  K04,         K05,  K06,  K07,  K08,  K09, \
@@ -25,7 +25,7 @@ RSG(KC_LEFT),  K20,  K21,  K22,  K23,  K24,         K25,  K26,  K27,  K28,  K29,
 KC_Q,              KC_W,              KC_E,              KC_R,              KC_T,              KC_Y,              KC_U,              KC_I,              KC_O,              KC_P,              \
 KC_A,              LALT_T(KC_S),      LCTL_T(KC_D),      LSFT_T(KC_F),      KC_G,              KC_H,              LSFT_T(KC_J),      LCTL_T(KC_K),      LALT_T(KC_L),      KC_QUOT,   \
 KC_Z,              KC_X,              KC_C,              KC_V,              KC_B,              KC_N,              KC_M,              KC_COMMA,          KC_DOT,            KC_SLSH,\
-U_NP,              U_NP,              LT(L_MOUSE,KC_ESC),LT(L_NAV,KC_BSPC),  LT(L_NUM,KC_TAB),LT(L_SYM,KC_ENT),  LT(L_FUN,KC_SPC), LT(L_MEDIA,KC_INS),  U_NP,              U_NP
+U_NP,              U_NP,              LT(L_WIN,KC_ESC),LT(L_NAV,KC_BSPC),  LT(L_NUM,KC_TAB),LT(L_SYM,KC_ENT),  LT(L_FUN,KC_SPC), LT(L_MEDIA,KC_INS),  U_NP,              U_NP
 
 
 #define LAYER_MEDIA \
@@ -63,3 +63,8 @@ U_NA,              U_NA,              U_NA,    U_NA,    U_NA,              KC_HO
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              KC_ENT,            KC_BSPC,           KC_DEL,            U_NP,              U_NP
 
 
+#define LAYER_WIN \
+U_NA,     U_NA,    U_NA,  U_NA,   U_NA,              KC_AGIN,             KC_PSTE,             KC_COPY,             KC_CUT,             KC_UNDO,             \
+KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NA,              KC_LEFT,           KC_DOWN,           KC_UP,             KC_RGHT,           CW_TOGG,           \
+U_NA,              U_NA,              U_NA,    U_NA,    U_NA,              KC_HOME,           KC_PGDN,           KC_PGUP,           KC_END,            KC_INS,            \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              KC_ENT,            KC_BSPC,           KC_DEL,            U_NP,              U_NP
