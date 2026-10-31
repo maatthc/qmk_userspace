@@ -4,7 +4,7 @@ COMBO_ENABLE = yes
 # Audio control and System control
 EXTRAKEY_ENABLE = yes
 
-MOUSEKEY_ENABLE = yes
+MOUSEKEY_ENABLE = no
 CAPS_WORD_ENABLE = yes
 RAW_ENABLE = yes
 # CONSOLE_ENABLE = yes
