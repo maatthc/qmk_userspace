@@ -1,4 +1,4 @@
-#   My QMK keyboard layout
+# My QMK keyboard layout
 
 This is a QWERTY Miryoku-inspired layout optimized for ergonomics.
 
@@ -7,7 +7,7 @@ It's a Split 3x6_3 with the outer columns dedicated to Window management shortcu
 It features:
 
 - Predictive Tap Hold: Faster tap/hold decisions
-- Home row mods 
+- Home row mods
 - Layer-tap keys: Hold thumb keys to access layers, tap for the base key
 - Raw HID: Layer state communication to a companion app
 
@@ -34,31 +34,38 @@ Details here: https://github.com/maatthc/keyboard_layers_app_companion
 ## Compile and Flash
 
 ### Install and setup
+
 - Install QMK:
+
 ```
 python3 -m pip install qmk
 ```
 
 - Initialize the sub-modules:
+
 ```
 git submodule update --init --recursive
 ```
 
 - Set this folder as an userspace:
+
 ```
 qmk config user.overlay_dir="$(realpath qmk_userspace)"
 ```
 
 - Set up QMK:
+
 ```
 cd ..; qmk setup
 ```
 
 #### Piantor
+
 ```
 export KEYBOARD="beekeeb/piantor"
 ```
-#### Corne 
+
+#### Corne
 
 ```
 export KEYBOARD="crkbd/rev1"
@@ -75,21 +82,26 @@ export PATH=${PWD}/avr_toolchain/bin:$PATH
 ```
 
 ### Compile
+
 ```
-qmk compile -kb $KEYBOARD -km maat
+qmk compile -kb $KEYBOARD -km maat -e SKIP_GIT=yes
+
 ```
 
 ### Flash
+
 ```
-qmk flash -kb $KEYBOARD -km maat
+qmk flash -kb $KEYBOARD -km maat -e SKIP_GIT=yes
 ```
 
 ### Generates the Clang compile_commands.json
+
 ```
-qmk compile --compiledb -kb $KEYBOARD -km maat
+qmk compile --compiledb -kb $KEYBOARD -km maat -e SKIP_GIT=yes
 ```
 
 ### Check debug logs
+
 ```
 qmk console
 ```
@@ -111,6 +123,7 @@ qmk info -kb $KEYBOARD -km maat
 https://config.qmk.fm/#/test
 
 ### Symbols that correspond to keycodes available in QMK.
+
 https://docs.qmk.fm/keycodes
 
 ## All Layers
@@ -134,4 +147,3 @@ Drop the .json files in the KLE NG editor, make the changes, change the image Zo
 ![Numbers](./data/layers/miryoku-kle-num.png)
 
 ![Functions](./data/layers/miryoku-kle-fun.png)
-

@@ -1,6 +1,5 @@
 // clang-format off
 #include QMK_KEYBOARD_H
-#include "print.h"
 #include "raw_hid.h"
 #include "keymap.h"
 
@@ -15,12 +14,6 @@ combo_t key_combos[] = {
 #ifdef RAW_ENABLE
     layer_state_t layer_state_set_user(layer_state_t state) {
         uint8_t hi_layer = get_highest_layer(state);
-        // If layer is L_WIN, keep the 'win' key pressed
-        if (get_highest_layer(state) == L_WIN) {
-            register_code(KC_LGUI);
-        } else {
-            unregister_code(KC_LGUI);
-        }
 
     #ifdef CONSOLE_ENABLE
         #include "print.h"
@@ -50,6 +43,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [L_NUM]=LAYER(LAYER_NUM),
     [L_SYM]=LAYER(LAYER_SYM),
     [L_FUN]=LAYER(LAYER_FUN),
-    [L_WIN]=LAYER(LAYER_WIN),
+    // [L_WIN]=LAYER(LAYER_WIN),
 };
 
